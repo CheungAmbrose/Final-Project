@@ -86,7 +86,7 @@
                         <div class="row">
                             <div class="form-group col-lg-4">
                                 <label>Primary Housing Type (ex: apartment)</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" id="primaryHousing">
                             </div>
                             <div class="form-group col-lg-4">
                                 <label>Primary Resident Type (ex: students)</label>
@@ -110,7 +110,7 @@
                             </div>
                             <div class="form-group col-lg-12">
                                 <input type="hidden" name="save" value="contact">
-                                <button type="submit" class="btn btn-default">Print</button>
+                                <button type="submit" class="btn btn-default" onclick="printFunc()">Print</button>
                             </div>
                         </div>
                     </form>
@@ -143,6 +143,12 @@
         interval: 5000 //changes the speed
     })
     </script>
+
+    <!-- myJS -->
+    <script src="js/myjs.js"></script>
+
+    <!-- jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
 
 </body>
 
