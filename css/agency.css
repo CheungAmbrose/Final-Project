@@ -109,8 +109,18 @@ h3, h4, h5, h6{
   border-bottom: 1px solid #ccc;
 }
 
+.logo {
+  si
+}
+
+.logo:hover {
+  text-decoration: none;
+
+
+}
 .img-centered {
   margin: 0 auto;
+  height: 40px;
 }
 .bg-light-gray {
   background-color: #eeeeee;
@@ -118,7 +128,7 @@ h3, h4, h5, h6{
 .bg-darkest-gray {
   background-color: #222222;
 }
-.btn-primary {
+.--primary {
   color: white;
   background-color: #00B76B;
   border-color: #00B76B;
