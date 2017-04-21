@@ -225,43 +225,65 @@
                     <h2 class="intro-text text-center">My
                         <strong>Organization</strong>
                     </h2>
-                    <hr>
                     <form role="form">
-                        <div class="row">
-                            <div class="form-group col-lg-12">
-                                <label>Do you know how final decisions are made in your organization? </label><br>
-                                <input type="radio" name="q1" value="yes">Yes<br>
-                                <input type="radio" name="q1" value="no">No
+                        <section id="orgtable" onclick="javascript:yesnoCheckorg();">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label>Do you know how final decisions are made in your organization? </label><br>
+                                    <input type="radio" name="q1" value="yes" id="orgq1y">Yes<br>
+                                    <input type="radio" name="q1" value="no" id="orgq1n">No
+                                </div>
+                                <div class="form-group col-md-6" id="orgq1fb">
+                                    Test
+                                </div>
                             </div>
-                            <div class="form-group col-lg-12">
-                                <label>Can you name the key decision makers in your organization?</label><br>
-                                <input type="radio" name="q2" value="yes" onclick="">Yes<br>
-                                <input type="radio" name="q2" value="no">No
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label>Can you name the key decision makers in your organization?</label><br>
+                                    <input type="radio" name="q2" value="yes" id="orgq2y">Yes<br>
+                                    <input type="radio" name="q2" value="no" id="orgq2n">No
+                                </div>
+                                <div class="form-group col-md-6" id="orgq2fb">
+                                    Test
+                                </div>
                             </div>
-                            <div class="form-group col-lg-12">
-                                <label>Can you name all stakeholders involved?</label><br>
-                                <input type="radio" name="q3" value="yes" id="orgq3y" onclick="javascript:yesnoCheckorg();">Yes<br>
-                                <input type="radio" name="q3" value="no" id="orgq3n" onclick="javascript:yesnoCheckorg();">No
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label>Can you name all stakeholders involved?</label><br>
+                                    <input type="radio" name="q3" value="yes" id="orgq3y">Yes<br>
+                                    <input type="radio" name="q3" value="no" id="orgq3n">No
+                                </div>
+                                <div class="form-group col-md-6" id="orgq3fb">
+                                    <div id="orgq3fbtext"></div>
+                                </div>
                             </div>
-                            <div class="form-group col-lg-12" id="contact">
-                                <label>If yes, list their contact information</label><br>
-                                <textarea class="form-control" rows="6"></textarea>
+                            <div class="row">
+                                <div class="form-group col-md-6" id="contact">
+                                    <label>List their contact information</label><br>
+                                    <textarea class="form-control" id="contactinput" rows="6" onkeyup="javascript:checkAllInput();"></textarea>
+                                </div>
                             </div>
-                            <div class="form-group col-lg-12">
-                                <label>Are there other organizations working to solve this issue?</label><br>
-                                <input type="radio" name="q4" value="yes">Yes<br>
-                                <input type="radio" name="q4" value="no">No
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label>Are there other organizations working to solve this issue?</label><br>
+                                    <input type="radio" name="q4" value="yes" id="orgq4y">Yes<br>
+                                    <input type="radio" name="q4" value="no" id="orgq4n">No
+                                </div>
+                                <div class="form-group col-md-6"  id="orgq4fb">
+                                    Test
+                                </div>
                             </div>
-                            <div class="form-group col-lg-12">
-                                <label>Do you know the other organizations working to solve this issue?</label><br>
-                                <input type="radio" name="q5" value="yes">Yes<br>
-                                <input type="radio" name="q5" value="no">No
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label>Do you know the other organizations working to solve this issue?</label><br>
+                                    <input type="radio" name="q5" value="yes" id="orgq5y">Yes<br>
+                                    <input type="radio" name="q5" value="no" id="orgq5n">No
+                                </div>
+                                <div class="form-group col-md-6" id="orgq5fb">
+                                    Test
+                                </div>
                             </div>
-                            <div class="form-group col-lg-12">
-                                <input type="hidden" name="save" value="contact">
-                                <button type="submit" class="btn btn-default">Print</button>
-                            </div>
-                        </div>
+                        </section>
                     </form>
                 </div>
             </div>
@@ -277,88 +299,165 @@
                 </h2>
                 <hr>
                 <form role="form">
-                    <div class="row">
-                        <div class="form-group col-lg-12">
-                            <label>Can you summarize your issue in one sentence?</label><br>
-                            <input type="radio" name="q1" value="yes" id="issq1y" onclick="javascript:yesnoCheckissue();">Yes<br>
-                            <p style="font-size:100%;" id="issuesentence">What is it?</p>
-                            <input type="text" class="form-control" id="issueentry">
-                            <input type="radio" name="q1" value="no" id="issq1n" onclick="javascript:yesnoCheckissue();">No
-                        </div>
-                        <div class="form-group col-lg-12">
-                            <label>Have you researched the issue you are solving?</label><br>
-                            <input type="radio" name="q2" value="yes">Yes<br>
-                            <input type="radio" name="q2" value="no">No
-                        </div>
-                        <div class="form-group col-lg-12">
-                            <label>Do you have a list of resources pertaining to this issue?</label><br>
-                            <input type="radio" name="q3" value="yes">Yes<br>
-                            <input type="radio" name="q3" value="no">No
-                        </div>
-                        <div class="form-group col-lg-12">
-                            <label>Do you have records of how this issue has been addressed in the past?</label><br>
-                            <input type="radio" name="q4" value="yes">Yes<br>
-                            <input type="radio" name="q4" value="no">No
-                        </div>
-                        <div class="form-group col-lg-12">
-                            <label>Have you defined measurable goals for your efforts?</label><br>
-                            <input type="radio" name="q5" value="yes">Yes<br>
-                            <input type="radio" name="q5" value="no">No
-                        </div>
-                        <div class="form-group col-lg-12">
-                            <label>Is there currently any opposition to your efforts?</label><br>
-                            <input type="radio" name="q6" value="yes">Yes<br>
-                            <input type="radio" name="q6" value="no">No
-                            <div class="form-group col-lg-12">
-                                <label>If so, do you understand there arguments?</label><br>
-                                <input type="radio" name="q7" value="yes">Yes<br>
-                                <input type="radio" name="q7" value="no">No
+                    <section id="isstable" onclick="javascript:yesnoCheckissue();">
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label>Can you summarize your issue in one sentence?</label><br>
+                                <input type="radio" name="q1" value="yes" id="issq1y">Yes<br>
+                                <input type="radio" name="q1" value="no" id="issq1n">No
+                            </div>
+                            <div class="form-group col-md-6" id="issq1fb">
+                                <div id="issq1fbtext"></div>
                             </div>
                         </div>
-                        <div class="form-group col-lg-12">
-                            <label>Can your issue:</label><br>
-                            <div class="form-group col-lg-12">
-                                <label>Help you recruit new members and develop leaders?</label><br>
-                                <input type="radio" name="q8" value="yes">Yes<br>
-                                <input type="radio" name="q8" value="no">No
-                            </div>
-                            <div class="form-group col-lg-12">
-                                <label>Result in real improvements in people's lives?</label><br>
-                                <input type="radio" name="q9" value="yes">Yes<br>
-                                <input type="radio" name="q9" value="no">No
-                            </div>
-                            <div class="form-group col-lg-12">
-                                <label>Result in improvements that are deeply and widely felt?</label><br>
-                                <input type="radio" name="q10" value="yes">Yes<br>
-                                <input type="radio" name="q10" value="no">No
-                            </div>
-                            <div class="form-group col-lg-12">
-                                <label>Bring people together (as opposed to dividing them)?</label><br>
-                                <input type="radio" name="q11" value="yes">Yes<br>
-                                <input type="radio" name="q11" value="no">No
-                            </div>
-                            <div class="form-group col-lg-12">
-                                <label>Be easily explained to the public?</label><br>
-                                <input type="radio" name="q12" value="yes">Yes<br>
-                                <input type="radio" name="q12" value="no">No
-                            </div>
-                            <div class="form-group col-lg-12">
-                                <label>Help you raise money or bring in additional resources?</label><br>
-                                <input type="radio" name="q13" value="yes">Yes<br>
-                                <input type="radio" name="q13" value="no">No
-                            </div>
-                            <div class="form-group col-lg-12">
-                                <label>Directly connent with your overall mission and values?</label><br>
-                                <input type="radio" name="q14" value="yes">Yes<br>
-                                <input type="radio" name="q14" value="no">No
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label id="issuesentence">What is that sentence?</label>
+                                <input type="text" class="form-control" id="issueentry" onkeyup="javascript:checkAllInput();">
                             </div>
                         </div>
-
-                        <div class="form-group col-lg-12">
-                            <input type="hidden" name="save" value="contact">
-                            <button type="submit" class="btn btn-default">Print</button>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label>Have you researched the issue you are solving?</label><br>
+                                <input type="radio" name="q2" value="yes" id="issq2y">Yes<br>
+                                <input type="radio" name="q2" value="no" id="issq2n">No
+                            </div>
+                            <div class="form-group col-md-6" id="issq2fb">
+                                Test
+                            </div>
                         </div>
-                    </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label>Do you have a list of resources pertaining to this issue?</label><br>
+                                <input type="radio" name="q3" value="yes" id="issq3y">Yes<br>
+                                <input type="radio" name="q3" value="no" id="issq3n">No
+                            </div>
+                            <div class="form-group col-md-6" id="issq3fb">
+                                Test
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label>Do you have records of how this issue has been addressed in the past?</label><br>
+                                <input type="radio" name="q4" value="yes" id="issq4y">Yes<br>
+                                <input type="radio" name="q4" value="no" id="issq4n">No
+                            </div>
+                            <div class="form-group col-md-6" id="issq4fb">
+                                Test
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label>Have you defined measurable goals for your efforts?</label><br>
+                                <input type="radio" name="q5" value="yes" id="issq5y">Yes<br>
+                                <input type="radio" name="q5" value="no" id="issq5n">No
+                            </div>
+                            <div class="form-group col-md-6" id="issq5fb">
+                                Test
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label>Is there currently any opposition to your efforts?</label><br>
+                                <input type="radio" name="q6" value="yes" id="issq6y" onclick="javascript:yesnoCheckissue();">Yes<br>
+                                <input type="radio" name="q6" value="no" id="issq6n" onclick="javascript:yesnoCheckissue();">No
+                            </div>
+                            <div class="form-group col-md-6" id="issq6fb">
+                                Test
+                            </div>
+                        </div>
+                        <div class="row" id="issq6optional">
+                            <div class="form-group col-md-6">
+                                <label>Do you understand their arguments?</label><br>
+                                <input type="radio" name="q7" value="yes" id="issq7y">Yes<br>
+                                <input type="radio" name="q7" value="no" id="issq7y">No
+                            </div>
+                            <div class="form-group col-md-6" id="issq7fb">
+                                Test
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-12">
+                                <label>Can your issue:</label><br>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label>Help you recruit new members and develop leaders?</label><br>
+                                        <input type="radio" name="q8" value="yes" id="issq8y">Yes<br>
+                                        <input type="radio" name="q8" value="no" id="issq8n">No
+                                    </div>
+                                    <div class="form-group col-md-6" id="issq8fb">
+                                        Test
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label>Result in real improvements in people's lives?</label><br>
+                                        <input type="radio" name="q9" value="yes" id="issq9y">Yes<br>
+                                        <input type="radio" name="q9" value="no" id="issq9n">No
+                                    </div>
+                                    <div class="form-group col-md-6" id="issq9fb">
+                                        Test
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label>Result in improvements that are deeply and widely felt?</label><br>
+                                        <input type="radio" name="q10" value="yes" id="issq10y">Yes<br>
+                                        <input type="radio" name="q10" value="no" id="issq10n">No
+                                    </div>
+                                    <div class="form-group col-md-6" id="issq10fb">
+                                        Test
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label>Bring people together (as opposed to dividing them)?</label><br>
+                                        <input type="radio" name="q11" value="yes" id="issq11y">Yes<br>
+                                        <input type="radio" name="q11" value="no" id="issq11n">No
+                                    </div>
+                                    <div class="form-group col-md-6" id="issq11fb">
+                                        Test
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label>Be easily explained to the public?</label><br>
+                                        <input type="radio" name="q12" value="yes" id="issq12y">Yes<br>
+                                        <input type="radio" name="q12" value="no" id="issq12n">No
+                                    </div>
+                                    <div class="form-group col-md-6" id="issq12fb">
+                                        Test
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label>Help you raise money or bring in additional resources?</label><br>
+                                        <input type="radio" name="q13" value="yes" id="issq13y">Yes<br>
+                                        <input type="radio" name="q13" value="no" id="issq13n">No
+                                    </div>
+                                    <div class="form-group col-md-6" id="issq13fb">
+                                        Test
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label>Directly connent with your overall mission and values?</label><br>
+                                        <input type="radio" name="q14" value="yes" id="issq14y">Yes<br>
+                                        <input type="radio" name="q14" value="no" id="issq14n">No
+                                    </div>
+                                    <div class="form-group col-md-6" id="issq14fb">
+                                        Test
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <input type="hidden" name="save" value="contact">
+                                <button type="submit" class="btn btn-default">Print</button>
+                            </div>
+                        </div>
+                    </section>
                 </form>
             </div>
         </div>
@@ -374,41 +473,64 @@
                     </h2>
                     <hr>
                     <form role="form">
-                        <div class="row">
-                            <div class="form-group col-lg-12">
-                                <label>Do you know how to best get in touch with your community?</label><br>
-                                <input type="radio" name="q1" value="yes">Yes<br>
-                                <input type="radio" name="q1" value="no">No
+                        <section id="engtable" onclick="javascript:yesnoCheckeng();">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label>Do you know how to best get in touch with your community?</label><br>
+                                    <input type="radio" name="q1" value="yes" id="engq1y">Yes<br>
+                                    <input type="radio" name="q1" value="no" id="engq1n">No
+                                </div>
+                                <div class="form-group col-md-6" id="engq1fb">
+                                    <div id="engq1fbtext"></div>
+                                </div>
                             </div>
-                            <div class="form-group col-lg-12">
-                                <label>If yes, list the ways you can contact your community (i.e. website, contact list, etc.)</label><br>
-                                <textarea class="form-control" rows="6"></textarea>
+                            <div class="row" id="engq1">
+                                <div class="form-group col-md-6">
+                                    <label>List the ways you can contact your community (i.e. website, contact list, etc.)</label><br>
+                                    <textarea class="form-control" rows="6" id="engq1input" onkeyup="javascript:checkAllInput();"></textarea>
+                                </div>
                             </div>
-                            <div class="form-group col-lg-12">
-                                <label>Do you have a plan for updating the public on your progress?</label><br>
-                                <input type="radio" name="q2" value="yes">Yes<br>
-                                <input type="radio" name="q2" value="no">No
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label>Do you have a plan for updating the public on your progress?</label><br>
+                                    <input type="radio" name="q2" value="yes" id="engq2y">Yes<br>
+                                    <input type="radio" name="q2" value="no" id="engq2n">No
+                                </div>
+                                <div class="form-group col-md-6" id="engq2fb">
+                                        Test
+                                </div>
                             </div>
-                            <div class="form-group col-lg-12">
-                                <label>Do you have a plan for recruiting new members of the community to your organization?</label><br>
-                                <input type="radio" name="q3" value="yes">Yes<br>
-                                <input type="radio" name="q3" value="no">No
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label>Do you have a plan for recruiting new members of the community to your organization?</label><br>
+                                    <input type="radio" name="q3" value="yes" id="engq3y">Yes<br>
+                                    <input type="radio" name="q3" value="no" id="engq3n">No
+                                </div>
+                                <div class="form-group col-md-6" id="engq3fb">
+                                        Test
+                                </div>
                             </div>
-                            <div class="form-group col-lg-12">
-                                <label>Do you have a method in place to receive feedback from your community?</label><br>
-                                <input type="radio" name="q3" value="yes">Yes<br>
-                                <input type="radio" name="q3" value="no">No
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label>Do you have a method in place to receive feedback from your community?</label><br>
+                                    <input type="radio" name="q4" value="yes" id="engq4y">Yes<br>
+                                    <input type="radio" name="q4" value="no" id="engq4n">No
+                                </div>
+                                <div class="form-group col-md-6" id="engq4fb">
+                                        Test
+                                </div>
                             </div>
-                            <div class="form-group col-lg-12">
-                                <input type="hidden" name="save" value="contact">
-                                <button type="submit" class="btn btn-default">Print</button>
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <input type="hidden" name="save" value="contact">
+                                    <button type="submit" class="btn btn-default">Print</button>
+                                </div>
                             </div>
-                        </div>
+                        </section>
                     </form>
                 </div>
             </div>
         </div>
-
     </div>
 </section>
     <!-- /.container -->
