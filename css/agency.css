@@ -292,7 +292,7 @@ fieldset[disabled] .btn-xl.active {
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: #222222;
+    background-color: #00B76B;
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
@@ -819,3 +819,12 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #00B76B;
 }
+
+table {
+  width: 100%;
+}
+
+th {
+    text-align: center;
+}
+
