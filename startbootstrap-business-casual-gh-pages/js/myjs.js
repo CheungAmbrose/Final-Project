@@ -1,10 +1,23 @@
-function printFunc()
+function printFunc(divName)
 {
-	var doc = new jsPDF()
-	var input = document.getElementById("primaryHousing").value;
-	doc.text("My Demographics", 70,10)
-	doc.text("Primary Housing Type: " + input, 10, 20)
-	doc.save('test.pdf')
+	var printContents = document.getElementById(divName).innerHTML;
+    var originalContents = document.body.innerHTML;
+
+    document.body.innerHTML = printContents;
+
+    window.print();
+
+    document.body.innerHTML = originalContents;
+
+
+ 	// window.print();
+
+
+	// var doc = new jsPDF()
+	// var input = document.getElementById("primaryHousing").value;
+	// doc.text("My Demographics", 70,10)
+	// doc.text("Primary Housing Type: " + input, 10, 20)
+	// doc.save('test.pdf')
 }
 
 window.onload = function() {
@@ -85,5 +98,12 @@ function sectionCheck() {
         document.getElementById('myengagement').style.display = 'block';
     } else if(!document.getElementById('engagementcheck').checked) {
         document.getElementById('myengagement').style.display = 'none';
+    }
+    if ((document.getElementById('demographicscheck').checked) || (document.getElementById('organizationcheck').checked) || (document.getElementById('issuecheck').checked) || (document.getElementById('engagementcheck').checked)) {
+    	document.getElementById('printbutton').style.display = 'block';
+    	document.getElementById('orginfo').style.display = 'block';
+    } else {
+    	document.getElementById('printbutton').style.display = 'none';
+    	document.getElementById('orginfo').style.display = 'none';
     }
 }

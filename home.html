@@ -181,6 +181,22 @@
             </div>
         </div>
 
+        <div class="row" id="orginfo">
+            <div class="box">
+                <hr>
+                <table id="userid">
+                    <th>
+                        <label>Your Name</label>
+                    <input type="text" class="form-control" id="name">
+                    </th>
+                    <th>
+                        <label>Your Organization</label>
+                    <input type="text" class="form-control" id="orgname">
+                    </th>
+                </table>
+            </div>
+        </div>
+
     <!--My Demographics-->
         <div class="row" id="mydemographics">
             <div class="box">
@@ -216,10 +232,6 @@
                             <div class="form-group col-lg-12">
                                 <label>Describe a location wherein community members self-organize (ex: local coffee shop, park) Why do you think these areas are successful for gathering residents?</label>
                                 <textarea class="form-control" rows="6"></textarea>
-                            </div>
-                            <div class="form-group col-lg-12">
-                                <input type="hidden" name="save" value="contact">
-                                <button type="submit" class="btn btn-default" onclick="printFunc()">Print</button>
                             </div>
                         </div>
                     </form>
@@ -461,12 +473,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <input type="hidden" name="save" value="contact">
-                                <button type="submit" class="btn btn-default">Print</button>
-                            </div>
-                        </div>
                     </section>
                 </form>
             </div>
@@ -530,16 +536,13 @@
                                         Test
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="form-group col-md-6">
-                                    <input type="hidden" name="save" value="contact">
-                                    <button type="submit" class="btn btn-default">Print</button>
-                                </div>
-                            </div>
                         </section>
                     </form>
                 </div>
             </div>
+        </div>
+        <div align="right" id="printbutton">
+            <button type="submit" class="btn btn-default" onclick="printFunc('assessment');">Print</button>
         </div>
     </div>
 </section>
