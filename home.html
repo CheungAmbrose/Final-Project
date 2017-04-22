@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Agency - Start Bootstrap Theme</title>
+    <title>Get Organized</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -255,8 +255,17 @@
                                     <input type="radio" name="q1" value="yes" id="orgq1y">Yes<br>
                                     <input type="radio" name="q1" value="no" id="orgq1n">No
                                 </div>
-                                <div class="form-group col-md-6" id="orgq1fb">
-                                    Test
+                                <div class="form-group col-md-6 fb" id="orgq1fb">
+                                    <!-- EDIT THESE -->
+                                    <img src="styleguide/images/brightness.png" alt="frames" width="50" height="50">
+                                    Action Item
+                                    <!-- EDIT THESE -->
+                                </div>
+                                <div class="form-group col-md-6 fb" id="orgq1optional">
+                                    <!-- EDIT THESE -->
+                                    <label>Placeholder (Name key processes/people?)</label><br>
+                                    <textarea class="form-control" id="orgq1input" rows="6"></textarea>
+                                    <!-- EDIT THESE -->
                                 </div>
                             </div>
                             <div class="row">
@@ -265,8 +274,13 @@
                                     <input type="radio" name="q2" value="yes" id="orgq2y">Yes<br>
                                     <input type="radio" name="q2" value="no" id="orgq2n">No
                                 </div>
-                                <div class="form-group col-md-6" id="orgq2fb">
-                                    Test
+                                <div class="form-group col-md-6 fb" id="orgq2fb">
+                                    <img src="styleguide/images/brightness.png" alt="frames" width="50" height="50">
+                                    Action Item
+                                </div>
+                                <div class="form-group col-md-6 fb" id="orgq2optional">
+                                    <label>Placeholder (List contact info?)</label><br>
+                                    <textarea class="form-control" id="orgq2input" rows="6"></textarea>
                                 </div>
                             </div>
                             <div class="row">
@@ -275,34 +289,13 @@
                                     <input type="radio" name="q3" value="yes" id="orgq3y">Yes<br>
                                     <input type="radio" name="q3" value="no" id="orgq3n">No
                                 </div>
-                                <div class="form-group col-md-6" id="orgq3fb">
-                                    <div id="orgq3fbtext"></div>
+                                <div class="form-group col-md-6 fb" id="orgq3fb">
+                                    <img src="styleguide/images/brightness.png" alt="frames" width="50" height="50">
+                                    Action Item
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group col-md-6" id="contact">
+                                <div class="form-group col-md-6 fb" id="orgq3optional">
                                     <label>List their contact information</label><br>
-                                    <textarea class="form-control" id="contactinput" rows="6" onkeyup="javascript:checkAllInput();"></textarea>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group col-md-6">
-                                    <label>Are there other organizations working to solve this issue?</label><br>
-                                    <input type="radio" name="q4" value="yes" id="orgq4y">Yes<br>
-                                    <input type="radio" name="q4" value="no" id="orgq4n">No
-                                </div>
-                                <div class="form-group col-md-6"  id="orgq4fb">
-                                    Test
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group col-md-6">
-                                    <label>Do you know the other organizations working to solve this issue?</label><br>
-                                    <input type="radio" name="q5" value="yes" id="orgq5y">Yes<br>
-                                    <input type="radio" name="q5" value="no" id="orgq5n">No
-                                </div>
-                                <div class="form-group col-md-6" id="orgq5fb">
-                                    Test
+                                    <textarea class="form-control" id="orgq3input" rows="6"></textarea>
                                 </div>
                             </div>
                         </section>
@@ -328,14 +321,13 @@
                                 <input type="radio" name="q1" value="yes" id="issq1y">Yes<br>
                                 <input type="radio" name="q1" value="no" id="issq1n">No
                             </div>
-                            <div class="form-group col-md-6" id="issq1fb">
-                                <div id="issq1fbtext"></div>
+                            <div class="form-group col-md-6 fb" id="issq1fb">
+                                <img src="styleguide/images/brightness.png" alt="frames" width="50" height="50">
+                                Action Item
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <label id="issuesentence">What is that sentence?</label>
-                                <input type="text" class="form-control" id="issueentry" onkeyup="javascript:checkAllInput();">
+                            <div class="form-group col-md-6 fb" id="issq1optional">
+                                <label>What is that sentence?</label><br>
+                                <textarea class="form-control" id="issq1input" rows="6"></textarea>
                             </div>
                         </div>
                         <div class="row">
@@ -344,58 +336,118 @@
                                 <input type="radio" name="q2" value="yes" id="issq2y">Yes<br>
                                 <input type="radio" name="q2" value="no" id="issq2n">No
                             </div>
-                            <div class="form-group col-md-6" id="issq2fb">
-                                Test
+                            <div class="form-group col-md-6 fb" id="issq2fb">
+                                <img src="styleguide/images/brightness.png" alt="frames" width="50" height="50">
+                                Action Item
+                            </div>
+                            <div class="form-group col-md-6 fb" id="issq2optional">
+                                <label>Placeholder (Link some sources?)</label><br>
+                                <textarea class="form-control" id="issq2input" rows="6"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label>Are there other organizations working to solve this issue?</label><br>
+                                <input type="radio" name="q3" value="yes" id="issq3y">Yes<br>
+                                <input type="radio" name="q3" value="no" id="issq3n">No
+                            </div>
+                            <div class="form-group col-md-6 fb"  id="issq3fb">
+                                <img src="styleguide/images/brightness.png" alt="frames" width="50" height="50">
+                                Action Item
+                            </div>
+                            <div class="form-group col-md-6 fb" id="issq3optional">
+                                <label>Placeholder (Name the organizations?)</label><br>
+                                <textarea class="form-control" id="issq3input" rows="6"></textarea>
+                            </div>
+                        </div>
+                        <div class="row fb" id="issq4">
+                            <div class="form-group col-md-6">
+                                <label>Do you know the other organizations working to solve this issue?</label><br>
+                                <input type="radio" name="q4" value="yes" id="issq4y">Yes<br>
+                                <input type="radio" name="q4" value="no" id="issq4n">No
+                            </div>
+                            <div class="form-group col-md-6 fb" id="issq4fb">
+                                <img src="styleguide/images/brightness.png" alt="frames" width="50" height="50">
+                                Action Item
+                            </div>
+                            <div class="form-group col-md-6 fb" id="issq4optional">
+                                <label>Placeholder (List contact info?)</label><br>
+                                <textarea class="form-control" id="issq4input" rows="6"></textarea>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label>Do you have a list of resources pertaining to this issue?</label><br>
-                                <input type="radio" name="q3" value="yes" id="issq3y">Yes<br>
-                                <input type="radio" name="q3" value="no" id="issq3n">No
+                                <input type="radio" name="q5" value="yes" id="issq5y">Yes<br>
+                                <input type="radio" name="q5" value="no" id="issq5n">No
                             </div>
-                            <div class="form-group col-md-6" id="issq3fb">
-                                Test
+                            <div class="form-group col-md-6 fb" id="issq5fb">
+                                <img src="styleguide/images/brightness.png" alt="frames" width="50" height="50">
+                                Action Item
+                            </div>
+                            <div class="form-group col-md-6 fb" id="issq5optional">
+                                <label>Placeholder (Link resources?)</label><br>
+                                <textarea class="form-control" id="issq5input" rows="6"></textarea>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label>Do you have records of how this issue has been addressed in the past?</label><br>
-                                <input type="radio" name="q4" value="yes" id="issq4y">Yes<br>
-                                <input type="radio" name="q4" value="no" id="issq4n">No
+                                <input type="radio" name="q6" value="yes" id="issq6y">Yes<br>
+                                <input type="radio" name="q6" value="no" id="issq6n">No
                             </div>
-                            <div class="form-group col-md-6" id="issq4fb">
-                                Test
+                            <div class="form-group col-md-6 fb" id="issq6fb">
+                                <img src="styleguide/images/brightness.png" alt="frames" width="50" height="50">
+                                Action Item
+                            </div>
+                            <div class="form-group col-md-6 fb" id="issq6optional">
+                                <label>Placeholder (Link sources?)</label><br>
+                                <textarea class="form-control" id="issq6input" rows="6"></textarea>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label>Have you defined measurable goals for your efforts?</label><br>
-                                <input type="radio" name="q5" value="yes" id="issq5y">Yes<br>
-                                <input type="radio" name="q5" value="no" id="issq5n">No
+                                <input type="radio" name="q7" value="yes" id="issq7y">Yes<br>
+                                <input type="radio" name="q7" value="no" id="issq7n">No
                             </div>
-                            <div class="form-group col-md-6" id="issq5fb">
-                                Test
+                            <div class="form-group col-md-6 fb" id="issq7fb">
+                                <img src="styleguide/images/brightness.png" alt="frames" width="50" height="50">
+                                Action Item
+                            </div>
+                            <div class="form-group col-md-6 fb" id="issq7optional">
+                                <label>Placeholder (List goals?)</label><br>
+                                <textarea class="form-control" id="issq7input" rows="6"></textarea>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label>Is there currently any opposition to your efforts?</label><br>
-                                <input type="radio" name="q6" value="yes" id="issq6y" onclick="javascript:yesnoCheckissue();">Yes<br>
-                                <input type="radio" name="q6" value="no" id="issq6n" onclick="javascript:yesnoCheckissue();">No
+                                <input type="radio" name="q8" value="yes" id="issq8y" onclick="javascript:yesnoCheckissue();">Yes<br>
+                                <input type="radio" name="q8" value="no" id="issq8n" onclick="javascript:yesnoCheckissue();">No
                             </div>
-                            <div class="form-group col-md-6" id="issq6fb">
-                                Test
+                            <div class="form-group col-md-6 fb" id="issq8fb">
+                                <img src="styleguide/images/brightness.png" alt="frames" width="50" height="50">
+                                Action Item
+                            </div>
+                            <div class="form-group col-md-6 fb" id="issq8optional">
+                                <label>Placeholder (Name opposition?)</label><br>
+                                <textarea class="form-control" id="issq8input" rows="6"></textarea>
                             </div>
                         </div>
-                        <div class="row" id="issq6optional">
+                        <div class="row fb" id="issq9">
                             <div class="form-group col-md-6">
                                 <label>Do you understand their arguments?</label><br>
-                                <input type="radio" name="q7" value="yes" id="issq7y">Yes<br>
-                                <input type="radio" name="q7" value="no" id="issq7y">No
+                                <input type="radio" name="q9" value="yes" id="issq9y">Yes<br>
+                                <input type="radio" name="q9" value="no" id="issq9n">No
                             </div>
-                            <div class="form-group col-md-6" id="issq7fb">
-                                Test
+                            <div class="form-group col-md-6 fb" id="issq9fb">
+                                <img src="styleguide/images/brightness.png" alt="frames" width="50" height="50">
+                                Action Item
+                            </div>
+                            <div class="form-group col-md-6 fb" id="issq9optional">
+                                <label>Placeholder (List arguments?)</label><br>
+                                <textarea class="form-control" id="issq9input" rows="6"></textarea>
                             </div>
                         </div>
                         <div class="row">
@@ -404,71 +456,106 @@
                                 <div class="row">
                                     <div class="form-group col-md-6">
                                         <label>Help you recruit new members and develop leaders?</label><br>
-                                        <input type="radio" name="q8" value="yes" id="issq8y">Yes<br>
-                                        <input type="radio" name="q8" value="no" id="issq8n">No
+                                        <input type="radio" name="q10" value="yes" id="issq10y">Yes<br>
+                                        <input type="radio" name="q10" value="no" id="issq10n">No
                                     </div>
-                                    <div class="form-group col-md-6" id="issq8fb">
-                                        Test
+                                    <div class="form-group col-md-6 fb" id="issq10fb">
+                                        <img src="styleguide/images/brightness.png" alt="frames" width="50" height="50">
+                                        Action Item
+                                    </div>
+                                    <div class="form-group col-md-6 fb" id="issq10optional">
+                                        <label>Placeholder (List how new people are recruited?)</label><br>
+                                        <textarea class="form-control" id="issq10input" rows="6"></textarea>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-md-6">
                                         <label>Result in real improvements in people's lives?</label><br>
-                                        <input type="radio" name="q9" value="yes" id="issq9y">Yes<br>
-                                        <input type="radio" name="q9" value="no" id="issq9n">No
+                                        <input type="radio" name="q11" value="yes" id="issq11y">Yes<br>
+                                        <input type="radio" name="q11" value="no" id="issq11n">No
                                     </div>
-                                    <div class="form-group col-md-6" id="issq9fb">
-                                        Test
+                                    <div class="form-group col-md-6 fb" id="issq11fb">
+                                        <img src="styleguide/images/brightness.png" alt="frames" width="50" height="50">
+                                        Action Item
+                                    </div>
+                                    <div class="form-group col-md-6 fb" id="issq11optional">
+                                        <label>Placeholder (List improvements?)</label><br>
+                                        <textarea class="form-control" id="issq11input" rows="6"></textarea>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-md-6">
                                         <label>Result in improvements that are deeply and widely felt?</label><br>
-                                        <input type="radio" name="q10" value="yes" id="issq10y">Yes<br>
-                                        <input type="radio" name="q10" value="no" id="issq10n">No
+                                        <input type="radio" name="q12" value="yes" id="issq12y">Yes<br>
+                                        <input type="radio" name="q12" value="no" id="issq12n">No
                                     </div>
-                                    <div class="form-group col-md-6" id="issq10fb">
-                                        Test
+                                    <div class="form-group col-md-6 fb" id="issq12fb">
+                                        <img src="styleguide/images/brightness.png" alt="frames" width="50" height="50">
+                                        Action Item
+                                    </div>
+                                    <div class="form-group col-md-6 fb" id="issq12optional">
+                                        <label>Placeholder (List impacts on community?)</label><br>
+                                        <textarea class="form-control" id="issq12input" rows="6"></textarea>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-md-6">
                                         <label>Bring people together (as opposed to dividing them)?</label><br>
-                                        <input type="radio" name="q11" value="yes" id="issq11y">Yes<br>
-                                        <input type="radio" name="q11" value="no" id="issq11n">No
+                                        <input type="radio" name="q13" value="yes" id="issq13y">Yes<br>
+                                        <input type="radio" name="q13" value="no" id="issq13n">No
                                     </div>
-                                    <div class="form-group col-md-6" id="issq11fb">
-                                        Test
+                                    <div class="form-group col-md-6 fb" id="issq13fb">
+                                        <img src="styleguide/images/brightness.png" alt="frames" width="50" height="50">
+                                        Action Item
+                                    </div>
+                                    <div class="form-group col-md-6 fb" id="issq13optional">
+                                        <label>Placeholder (List benefits/cons?)</label><br>
+                                        <textarea class="form-control" id="issq13input" rows="6"></textarea>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-md-6">
                                         <label>Be easily explained to the public?</label><br>
-                                        <input type="radio" name="q12" value="yes" id="issq12y">Yes<br>
-                                        <input type="radio" name="q12" value="no" id="issq12n">No
+                                        <input type="radio" name="q14" value="yes" id="issq14y">Yes<br>
+                                        <input type="radio" name="q14" value="no" id="issq14n">No
                                     </div>
-                                    <div class="form-group col-md-6" id="issq12fb">
-                                        Test
+                                    <div class="form-group col-md-6 fb" id="issq14fb">
+                                        <img src="styleguide/images/brightness.png" alt="frames" width="50" height="50">
+                                        Action Item
+                                    </div>
+                                    <div class="form-group col-md-6 fb" id="issq14optional">
+                                        <label>Placeholder (Short explanation?)</label><br>
+                                        <textarea class="form-control" id="issq14input" rows="6"></textarea>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-md-6">
                                         <label>Help you raise money or bring in additional resources?</label><br>
-                                        <input type="radio" name="q13" value="yes" id="issq13y">Yes<br>
-                                        <input type="radio" name="q13" value="no" id="issq13n">No
+                                        <input type="radio" name="q15" value="yes" id="issq15y">Yes<br>
+                                        <input type="radio" name="q15" value="no" id="issq15n">No
                                     </div>
-                                    <div class="form-group col-md-6" id="issq13fb">
-                                        Test
+                                    <div class="form-group col-md-6 fb" id="issq15fb">
+                                        <img src="styleguide/images/brightness.png" alt="frames" width="50" height="50">
+                                        Action Item
+                                    </div>
+                                    <div class="form-group col-md-6 fb" id="issq15optional">
+                                        <label>Placeholder (List how income generated?)</label><br>
+                                        <textarea class="form-control" id="issq15input" rows="6"></textarea>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-md-6">
-                                        <label>Directly connent with your overall mission and values?</label><br>
-                                        <input type="radio" name="q14" value="yes" id="issq14y">Yes<br>
-                                        <input type="radio" name="q14" value="no" id="issq14n">No
+                                        <label>Directly connect with your overall mission and values?</label><br>
+                                        <input type="radio" name="q16" value="yes" id="issq16y">Yes<br>
+                                        <input type="radio" name="q16" value="no" id="issq16n">No
                                     </div>
-                                    <div class="form-group col-md-6" id="issq14fb">
-                                        Test
+                                    <div class="form-group col-md-6 fb" id="issq16fb">
+                                        <img src="styleguide/images/brightness.png" alt="frames" width="50" height="50">
+                                        Action Item
+                                    </div>
+                                    <div class="form-group col-md-6 fb" id="issq16optional">
+                                        <label>Placeholder (Link back to goal?)</label><br>
+                                        <textarea class="form-control" id="issq16input" rows="6"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -496,14 +583,13 @@
                                     <input type="radio" name="q1" value="yes" id="engq1y">Yes<br>
                                     <input type="radio" name="q1" value="no" id="engq1n">No
                                 </div>
-                                <div class="form-group col-md-6" id="engq1fb">
-                                    <div id="engq1fbtext"></div>
+                                <div class="form-group col-md-6 fb" id="engq1fb">
+                                    <img src="styleguide/images/brightness.png" alt="frames" width="50" height="50">
+                                    Action Item
                                 </div>
-                            </div>
-                            <div class="row" id="engq1">
-                                <div class="form-group col-md-6">
+                                <div class="form-group col-md-6 fb" id="engq1optional">
                                     <label>List the ways you can contact your community (i.e. website, contact list, etc.)</label><br>
-                                    <textarea class="form-control" rows="6" id="engq1input" onkeyup="javascript:checkAllInput();"></textarea>
+                                    <textarea class="form-control" rows="6" id="engq1input"></textarea>
                                 </div>
                             </div>
                             <div class="row">
@@ -512,8 +598,13 @@
                                     <input type="radio" name="q2" value="yes" id="engq2y">Yes<br>
                                     <input type="radio" name="q2" value="no" id="engq2n">No
                                 </div>
-                                <div class="form-group col-md-6" id="engq2fb">
-                                        Test
+                                <div class="form-group col-md-6 fb" id="engq2fb">
+                                    <img src="styleguide/images/brightness.png" alt="frames" width="50" height="50">
+                                    Action Item
+                                </div>
+                                <div class="form-group col-md-6 fb" id="engq2optional">
+                                    <label>Placeholder (Describe plan?)</label><br>
+                                    <textarea class="form-control" rows="6" id="engq2input"></textarea>
                                 </div>
                             </div>
                             <div class="row">
@@ -522,8 +613,13 @@
                                     <input type="radio" name="q3" value="yes" id="engq3y">Yes<br>
                                     <input type="radio" name="q3" value="no" id="engq3n">No
                                 </div>
-                                <div class="form-group col-md-6" id="engq3fb">
-                                        Test
+                                <div class="form-group col-md-6 fb" id="engq3fb">
+                                    <img src="styleguide/images/brightness.png" alt="frames" width="50" height="50">
+                                    Action Item
+                                </div>
+                                <div class="form-group col-md-6 fb" id="engq3optional">
+                                    <label>Placeholder (Describe plan?)</label><br>
+                                    <textarea class="form-control" rows="6" id="engq3input"></textarea>
                                 </div>
                             </div>
                             <div class="row">
@@ -532,8 +628,13 @@
                                     <input type="radio" name="q4" value="yes" id="engq4y">Yes<br>
                                     <input type="radio" name="q4" value="no" id="engq4n">No
                                 </div>
-                                <div class="form-group col-md-6" id="engq4fb">
-                                        Test
+                                <div class="form-group col-md-6 fb" id="engq4fb">
+                                    <img src="styleguide/images/brightness.png" alt="frames" width="50" height="50">
+                                    Action Item
+                                </div>
+                                <div class="form-group col-md-6 fb" id="engq4optional">
+                                    <label>Placeholder (Describe method?)</label><br>
+                                    <textarea class="form-control" rows="6" id="engq4input"></textarea>
                                 </div>
                             </div>
                         </section>
