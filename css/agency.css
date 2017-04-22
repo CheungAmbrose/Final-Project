@@ -51,7 +51,7 @@ body {
   line-height: 1.3em;
 }
 .text-muted {
-   dor: #777777;
+   /*dor: #777777;*/
    text-align: left;
 }
 .text-primary {
@@ -300,8 +300,8 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  /*background-image: url('../img/header-bg.jpg');*/
-  background-color: #C4C9C4;
+  background-image: url('../img/atlanta.jpg');
+  /*background-color: #C4C9C4;*/
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -327,7 +327,7 @@ header .intro-text .intro-heading {
   font-family: "WhitneyHTF-Medium", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 30px;
   line-height: 50px;
   margin-bottom: 25px;
 }
@@ -353,7 +353,7 @@ header .intro-text .intro-heading {
   }
 }
 section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 section h2.section-heading {
   font-size: 40px;
@@ -362,12 +362,14 @@ section h2.section-heading {
 }
 section h3.section-subheading {
   font-size: 16px;
-  font-family: "WhitneyHTF-Medium", sans-serif;
+  font-family: "WhitneyHTF-Light", sans-serif;
   text-transform: none;
-  font-style: italic;
+  text-indent: 40px;
   font-weight: 400;
-  margin-bottom: 75px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
+
 @media (min-width: 768px) {
   section {
     padding: 150px 0;
