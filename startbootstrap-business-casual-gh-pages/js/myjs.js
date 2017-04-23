@@ -10,7 +10,7 @@ function printFunc(divName)
     document.body.innerHTML = originalContents;
 
 
- 	// window.print();
+ 	// document.getElementById(divName).print();
 
 
 	// var doc = new jsPDF()
