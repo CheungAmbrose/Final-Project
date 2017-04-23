@@ -830,3 +830,11 @@ th {
     text-align: left;
 }
 
+@media print {
+  .printable, .printable * {
+    display: inline;
+  }
+  body * {
+    display: none;
+  }
+}
