@@ -46,15 +46,16 @@ a/*!
 body {
   overflow-x: hidden;
   font-family: "WhitneyHTF-Medium", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 200;
   line-height: 1.3em;
 }
 .text-muted {
    /*dor: #777777;*/
-   text-align: left;
+   text-align: center;
    font-size: 16px;
 }
+
 .text-primary {
   color: #00B76B;
 }
@@ -131,8 +132,8 @@ h3, h4, h5, h6{
 }
 .--primary {
   color: white;
-  background-color: #00B76B;
-  border-color: #00B76B;
+  background-color: none;
+  border-color: white;
   font-family: "WhitneyHTF-Medium", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -143,8 +144,8 @@ h3, h4, h5, h6{
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: white;
-  background-color: #fec503;
-  border-color: #f6bf01;
+  background-color: none;
+  border-color: white;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -166,11 +167,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #00B76B;
-  border-color: #00B76B;
+  background-color: none;
+  border-color: white;
 }
 .btn-primary .badge {
-  color: #00B76B;
+  color: white;
   background-color: white;
 }
 .btn-xl {
@@ -184,6 +185,14 @@ fieldset[disabled] .btn-primary.active {
   font-size: 18px;
   padding: 20px 40px;
 }
+
+.btn-border {
+  border-color:white;
+  border-radius: 3px;
+  font-size: 16px; 
+  padding: 10px 20px;
+}
+
 .btn-xl:hover,
 .btn-xl:focus,
 .btn-xl:active,
@@ -221,8 +230,8 @@ fieldset[disabled] .btn-xl.active {
   background-color: white;
 }
 .navbar-custom {
-  background-color: #222222;
-  border-color: transparent;
+  background-color: none;
+  border-color: white;
 }
 .navbar-custom .navbar-brand {
   color: #00B76B;
@@ -270,7 +279,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
   color: white;
-  background-color: #fec503;
+  background-color: none;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -733,7 +742,7 @@ ul.social-buttons li a:active {
 .btn:active,
 .btn.active,
 .btn:active:focus {
-  outline: none;
+  outline: #00B76B;
 }
 .portfolio-modal .modal-dialog {
   margin: 0;
@@ -833,6 +842,8 @@ table {
 
 th {
     text-align: left;
+    padding-top: 70px;
+    padding-right: 30px;
 }
 
 @media print {
