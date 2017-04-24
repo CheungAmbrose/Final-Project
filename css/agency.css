@@ -53,6 +53,7 @@ body {
 .text-muted {
    /*dor: #777777;*/
    text-align: left;
+   font-size: 16px;
 }
 .text-primary {
   color: #00B76B;
