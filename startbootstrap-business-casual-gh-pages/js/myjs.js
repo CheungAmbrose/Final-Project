@@ -69,14 +69,14 @@ function yesnoCheckissue() {
         document.getElementById('issq4').style.display = 'none';
     }
 
-    if (document.getElementById('issq4y').checked) {
-        document.getElementById('issq4optional').style.display = 'block';
-        document.getElementById('issq4fb').style.display = 'none';
-    } 
-    else if(document.getElementById('issq4n').checked) {
-        document.getElementById('issq4optional').style.display = 'none';
-        document.getElementById('issq4fb').style.display = 'block';
-    }
+    // if (document.getElementById('issq4y').checked) {
+    //     document.getElementById('issq4optional').style.display = 'block';
+    //     document.getElementById('issq4fb').style.display = 'none';
+    // } 
+    // else if(document.getElementById('issq4n').checked) {
+    //     document.getElementById('issq4optional').style.display = 'none';
+    //     document.getElementById('issq4fb').style.display = 'block';
+    // }
 
     if (document.getElementById('issq5y').checked) {
         document.getElementById('issq5optional').style.display = 'block';
