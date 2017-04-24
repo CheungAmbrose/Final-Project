@@ -61,12 +61,10 @@ function yesnoCheckissue() {
     if (document.getElementById('issq3y').checked) {
         document.getElementById('issq3optional').style.display = 'block';
         document.getElementById('issq3fb').style.display = 'none';
-        document.getElementById('issq4').style.display = 'block';
     } 
     else if(document.getElementById('issq3n').checked) {
         document.getElementById('issq3optional').style.display = 'none';
         document.getElementById('issq3fb').style.display = 'block';
-        document.getElementById('issq4').style.display = 'none';
     }
 
     // if (document.getElementById('issq4y').checked) {
