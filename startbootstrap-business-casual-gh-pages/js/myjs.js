@@ -287,8 +287,10 @@ function sectionCheck() {
     if ((document.getElementById('demographicscheck').checked) || (document.getElementById('organizationcheck').checked) || (document.getElementById('issuecheck').checked) || (document.getElementById('engagementcheck').checked)) {
     	document.getElementById('printbutton').style.display = 'block';
     	document.getElementById('orginfo').style.display = 'block';
+    	document.getElementById('goodjobudidit').style.display = 'block';
     } else {
     	document.getElementById('printbutton').style.display = 'none';
     	document.getElementById('orginfo').style.display = 'none';
+    	document.getElementById('goodjobudidit').style.display = 'none';
     }
 }
