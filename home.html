@@ -151,7 +151,7 @@
                 <hr>
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Playbook Organization Tool</h2><br>
-                    <p class="section-subheading text-muted" style="padding:100px">Based on community association needs, select from the categories below to start getting organized. Once selected, input relevant information  about your issue and discover next steps to compelte before beginning the initiative.</p>
+                    <p class="section-subheading text-muted" style="padding-left:100px padding-right:100px">Based on community association needs, select from the categories below to start getting organized. Once selected, input relevant information  about your issue and discover next steps to compelte before beginning the initiative.</p>
                 </div>
                 <hr><br>
                 <table id="sections">
@@ -673,6 +673,10 @@
             </div>
         </div>
         <div align="right" id="printbutton">
+            <div align="left" id="savebutton">
+                <button type="submit" class="btn btn-default" onclick="alert('Your progress has been saved. You can retrieve your progress at the following link:\n yourcustom.link/yOu');">Save for later</button>
+            </div>
+            <button type="submit" class="btn btn-default" onclick="window.open('results.pdf', '_blank', 'fullscreen=yes'); return false;">View PDF</button>
             <button type="submit" class="btn btn-default" onclick="printFunc('assessment');">Print</button>
         </div>
     </div>
