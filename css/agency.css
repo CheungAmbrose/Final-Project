@@ -857,4 +857,7 @@ th {
   body * {
     display: none;
   }
+  body {
+    margin: 5mm 5mm 5mm 5mm;
+  }
 }
