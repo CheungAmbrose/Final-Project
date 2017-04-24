@@ -101,6 +101,11 @@ h2{
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
+#goodjobyoudidit {
+  text-align: center;
+   font-size: 16px;
+}
 h3, h4, h5, h6{
   font-family: "WHTF", "helvetica", sans-serif;
   font-weight: 500;
